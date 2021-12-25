@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>New Folder</title>
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <!--<script src="https://kit.fontawesome.com/f615d2e945.js" crossorigin="anonymous"></script>-->
+    <script src="../js/new_folder_handler.js"></script>
+    <link rel="stylesheet" href="../css/top_nav_operations.css"/>
+</head>
+<body>
+<div class="new_folder_frame_div">
+    <button onclick="delete_div()" class="cancel" >Cancel</button> <button id="selector_btn" class="select" onclick="get_parent_folder()">Select</button>
+    <iframe id="get_parent" src="" onload="this.contentWindow.location.href" name="new_folder_iframe" class="new_folder_frame">
+
+    </iframe>
+</div>
+
+<form name="new_folder_form" class="new_folder_form" method="POST">
+    <h1 id="create_folder_heading">Create Folder</h1>
+    <i class="fa fa-folder" aria-hidden="true"></i><br>
+    <button type="submit" onclick="display_parent_folder_selector()" ><a href="../folders/" target="new_folder_iframe">Select Parent Directory</a></button>
+    <label>
+        <input id="parent_name" type="text" name="parent_folder" value=""/>
+    </label>
+    <label for="folder_name"></label><input id="folder_name" type="text" name="folder_name" placeholder="Enter Folder Name"/><br>
+    <input id="create" type="submit" name="action" value="Create" formaction="../php/new_folder.php"/>
+    <button id="cancel_creation" onclick="remove_form()">Cancel</button>
+</form>
+</body>
+</html>

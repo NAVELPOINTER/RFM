@@ -1,0 +1,31 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+tr{
+    background-color: #252323;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+td{
+    color: white;
+    padding: 15px;
+    font-size: smaller;
+    font-weight: bolder;
+}
+
+#switch{
+    float: right;
+    width: 80px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: darkgrey;
+}
+
+#switch a{
+    float: left;
+    text-decoration: none;
+    font-size: 140px;
+    margin-top: -140%;
+}

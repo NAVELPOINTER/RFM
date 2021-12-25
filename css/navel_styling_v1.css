@@ -1,0 +1,49 @@
+.u_background{
+  background: -moz-linear-gradient(#660033,#99004d,#cc0066,#cc0066,#0033cc,green,yellow,yellow,yellow,yellow);
+}
+
+#m_heading{
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 3%;
+}
+
+#account_img{
+  border-radius: 50% 50% 50% 50%;
+  height: 250px ;
+  width: 250px;
+  margin-left: 45%;
+  margin-top: 9%;
+}
+
+.create_account{
+  margin-top: 5%;
+  color: white;
+  font-style: normal;
+  font-weight: bolder;
+  padding: 1% 3% 1% 8%;
+  background-color: #3399ff;
+  border-radius: 10px;
+  width: 200px;
+  text-transform: uppercase;
+  margin-left: 41%;
+}
+
+#create_account_info{
+  color: #3399ff;
+  font-style: normal;
+  margin-left: 41%;
+  font-weight: bolder;
+  padding-bottom: 8%;
+}
+
+#create_account_info_a{
+  color: #3399ff;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: none;
+}

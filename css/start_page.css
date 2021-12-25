@@ -1,0 +1,22 @@
+/*styling for the start page*/
+
+table i{
+  font-size: 150px;
+  color: #ffcc00;
+}
+
+
+/*styling for links*/
+table a{
+  text-decoration: none;
+  color: #00ace6;
+}
+
+table h2{
+  text-align: center;
+  color: #00ace6;
+}
+
+table td{
+  width: 25%;
+}

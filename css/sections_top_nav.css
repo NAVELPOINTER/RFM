@@ -1,0 +1,80 @@
+/*general stylling for links*/
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*stylling the operations in the top navigation bar*/
+.top-nav-operations ul li{
+  list-style-type: none;
+  display: inline-block;
+}
+
+.top-nav-operations ul #section-division-1 i{
+  font-size: 50px;
+  padding: 5px;
+  color: #0059b3;
+}
+
+#section-division-1{
+  margin-left: -4%;
+}
+
+#section-division-2{
+  margin-left: 0%;
+  width: 8%;
+}
+
+.top-nav-operations ul #section-division-2 ul li{
+  display: block;
+  padding: 2%;
+}
+
+.top-nav-operations ul #section-division-2 i{
+  padding: 5px;
+  font-size: 20px;
+  color: #0059b3;
+}
+
+.top-nav-operations ul #section-division-3 i{
+  padding-left: 10px;
+  color: #0059b3;
+  font-size: 50px;
+}
+
+.top-nav-operations ul #section-division-4 ul li{
+  display: block;
+  padding: 2%;
+}
+
+.top-nav-operations ul #section-division-4 i{
+  padding: 5px;
+  font-size: 20px;
+  color: #0059b3;
+}
+
+.top-nav-operations ul #section-division-5 ul li{
+  display: block;
+}
+
+.top-nav-operations ul #section-division-5 i{
+  font-size: 40px;
+}
+
+.top-nav-operations ul #section-division-6 ul li{
+  display: block;
+  padding: 2%;
+}
+
+.top-nav-operations ul #section-division-6 i{
+  font-size: 20px;
+  color: #0059b3;
+  padding: 5px;
+}
+
+.top-nav-operations ul #section-division-7 i{
+  font-size: 100px;
+  color: #0059b3;
+  padding: 5px;
+}
+

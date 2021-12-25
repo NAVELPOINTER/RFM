@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data_Center</title>
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+   <link rel="stylesheet" href="../css/base.css">
+    <script src="../js/new_folder_handler.js"></script>
+    <!--<script src="https://kit.fontawesome.com/f615d2e945.js" crossorigin="anonymous">
+    </script>-->
+</head>
+<body>
+<script>
+  //setInterval(get_location, 100);
+  //get_path_attached_favorites();
+</script>
+<!--Top navigation_Bar-->
+<div class="top_nav_bar">
+    <div class="top_top_nav_bar">
+      <ul>
+        <li id="active"><a href="file.html">File</a></li>
+        <li><a href="home.html" target="top_nav_operations">Home</a></li>
+        <li><a href="share.html" target="top_nav_operations">Share</a></li>
+        <li><a href="settings.html" target="top_nav_operations">View</a></li>
+      </ul>
+    </div>
+    <iframe src="home.html" name="top_nav_operations">
+
+    </iframe>
+</div>
+
+<!-- midway searches between the top and the sideways navigation bar-->
+<div class="midway-search-actions">
+  <a id="parent-up-directory" href="" onclick="up_directory()" target="content-container"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+  <a id="child-down-directory" href="" onclick="down_directory()" target="content-container"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  <a id="drop-down-folders" href=""><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+  <a class="forward-up-directory" href=""><i class="fa fa-level-up" aria-hidden="true"></i></a>
+
+    <!--the form to select the directory to be displayed in the display pannel-->
+  <form name="select-directory" class="select-directory">
+    <label><i class="fa fa-star" aria-hidden="true"></i></label>
+    <label><i class="fa fa-chevron-right" aria-hidden="true"></i></label>
+    <input type="submit" name="quick_access_path" value=".........">
+    <label id="pwd"><i class="fa fa-arrow-down" aria-hidden="true"></i></label>
+    <label id="refresh"><i class="fa fa-refresh" aria-hidden="true"></i></label>
+  </form>
+  <!--icon to refresh the selected directory-->
+  <img src="" alt=""/>
+    <!--the form to search each directory displayed in the panel-->
+  <form class="search-selected-directory">
+    <label><i class="fa fa-search" aria-hidden="true"></i></label>
+    <input type="submit" value="Search Quick Access"/>
+  </form>
+</div>
+
+<!-- Side navigation bar-->
+<div class="side_nav_bar">
+  <label><a href="start_page.html" style="color: #000000" target="content-container"><i class="fa fa-folder" aria-hidden="true"></i>DIRECTORIES</a></label>
+  <ul>
+    <li><i class="fa fa-angle-double-right" aria-hidden="true"></i><i class="fa fa-clock-o" aria-hidden="true"></i><a href="">Recent Folders</a></li>
+    <li><i class="fa fa-angle-double-right" aria-hidden="true"></i><i class="fa fa-heart" aria-hidden="true"></i><a href="">Favorites</a></li>
+    <li><i class="fa fa-angle-double-right" aria-hidden="true"></i><i class="fa fa-book" aria-hidden="true"></i><a href="../folders/documents/" target="content-container">Documents</a></li>
+    <li><i class="fa fa-angle-double-right" aria-hidden="true"></i><i class="fa fa-video-camera" aria-hidden="true"></i><a href="../folders/videos/" target="content-container">Videos</a></li>
+    <li><i class="fa fa-angle-double-right" aria-hidden="true"></i><i class="fa fa-picture-o" aria-hidden="true"></i><a href="../folders/pictures/" target="content-container">Pictures</a></li>
+    <li><i class="fa fa-angle-double-right" aria-hidden="true"></i><i class="fa fa-music" aria-hidden="true"></i><a href="../folders/music/" target="content-container">Music</a></li>
+    <li><i class="fa fa-angle-double-right" aria-hidden="true"></i><i class="fa fa-share" aria-hidden="true"></i><a href="../folders/shared_folder/" target="content-container">Shared Folder</a></li>
+  </ul>
+  <label><i class="fa fa-wrench" aria-hidden="true"></i>OTHER OPERATIONS</label>
+  <ul>
+    <li><i class="fa fa-user" aria-hidden="true"></i><a href="">View Profile</a></li>
+    <li><i class="fa fa-trash-o" aria-hidden="true"></i><a href="">Trash</a></li>
+    <li><i class="fa fa-cog" aria-hidden="true"></i><a href="settings.html" target="other-operations" onclick="display_other_operations_div()">Settings</a></li>
+  </ul>
+</div>
+
+<!-- grand iframe to display our page content-->
+<iframe class="content-container" src="start_page.html" onload="this.contentWindow.location.href" name="content-container" id="parent-content-container">
+
+</iframe>
+
+<!--sub iframe to display our other operations-->
+<div class="other-operations-div">
+  <p id="other-operations-depended"><button id="cancel">Cancel</button>Settings<button id="apply">Apply</button></p>
+  <iframe class="other-operations" src="" name="other-operations" id="other-operations">
+
+  </iframe>
+</div>
+<iframe src="" name="hidden-iframe" id="hidden-iframe" height="20px" width="30px">
+
+</iframe>
+</body>
+</html>
